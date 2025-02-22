@@ -11,9 +11,10 @@ In total there were 4 VMs. A VM running Windows 10 with Splunk forwarding and Sy
 - How to add LimaCharlie endpoint onto Windows Server.
 - How to inspect events generated from the server in LimaCharlie.
 - How to install LaZagne and then creating a specific rule to check processes relating to LaZagne.
-- How to create Webhook link between LimaCharlie and Tines.
+- Using Tines to create links between LimaCharlie and Slack.
 - How to generate alerts on Slack.
-- 
+- Setting up trigger links on Tines.
+  
 ## Tools Used
 
 - LimaCharlie
