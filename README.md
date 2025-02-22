@@ -2,8 +2,7 @@
 
 ## Objective
 
-This Project aimed to create a basic AD environment, utilise the user accounts to perform attacks on from Kali and have Splunk configured to generate telemetry from the target machines. 
-In total there were 4 VMs. A VM running Windows 10 with Splunk forwarding and Sysmon configured on. A VM running Windows Server machine running AD which also had Splunk forwarding and Sysmon configured on. A VM running Ubunutu which was configured for Splunk. Finally a VM running Kali Linux.
+This Project creates a SOAR EDR Playbook. Tines is used to create the interactive playbook. LimaCharlie is used as the EDR. Slack is used to generate alerts. Windows Server 2022 VM is used with LimaCharlie agent. LaZagne password recovery tool used on VM to generate telemetry viewed in LimaCharlie. Tines used Webhook to link into LimaCharlie under Outputs.
 
 ## Skills Learned
 
