@@ -2,25 +2,42 @@
 
 ## Objective
 
-This Project creates a SOAR EDR Playbook. Tines is used to create the interactive playbook. LimaCharlie is used as the EDR. Slack is used to generate alerts. Windows Server 2022 VM is used with LimaCharlie agent. LaZagne password recovery tool used on VM to generate telemetry viewed in LimaCharlie. Tines used Webhook to link into LimaCharlie under Outputs.
+This project demonstrates the creation of a Security Orchestration, Automation, and Response (SOAR) playbook integrated with an Endpoint Detection and Response (EDR) solution.
+
+- Tines is used to build the interactive playbook.
+- LimaCharlie serves as the EDR platform.
+- Slack is used for alerting and user interaction.
+- A Windows Server 2022 VM hosts the LimaCharlie agent.
+- LaZagne, a password recovery tool, is used to generate telemetry for detection.
 
 ## Skills Learned
 
-- How to create a SOAR EDR playbook.
-- How to add LimaCharlie endpoint onto Windows Server.
-- How to inspect events generated from the server in LimaCharlie.
-- How to install LaZagne and then creating a specific rule to check processes relating to LaZagne.
-- Using Tines to create links between LimaCharlie and Slack.
-- How to generate alerts on Slack.
-- Setting up trigger links on Tines.
+- Deploying LimaCharlie agents on Windows Server.
+- Creating detection rules for suspicious activity (LaZagne).
+- Building a SOAR playbook in Tines.
+- Integrating Slack with Tines for alerting and decision-making.
+- Using REST APIs to automate endpoint isolation.
+- Understanding EDR telemetry and event flow.
   
 ## Tools Used
 
-- LimaCharlie
-- Virtual Box with Windows Server 2022
-- LaZagne
-- Slack
-- Tines
+- VirtualBox for VM setup.
+- Windows Server 2022 for endpoint simulation.
+- LimaCharlie for EDR.
+- Tines for SOAR playbook creation.
+- Slack for alerting and interaction.
+- LaZagne for simulating credential dumping activity.
+
+## Workflow Overview
+
+1. Install LimaCharlie Agent on Windows Server.
+2. Run LaZagne to simulate suspicious activity.
+3. Create Detection Rules in LimaCharlie for LaZagne processes.
+4. Trigger Events and forward them to Tines via Webhook.
+5. Tines Playbook processes the event and sends alerts to Slack.
+6. Slack User Prompt allows manual decision (e.g., isolate endpoint).
+7. Tines uses REST API to isolate the endpoint via LimaCharlie.
+8. Status Updates are sent back to Slack.
 
 ## Steps
 
